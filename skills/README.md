@@ -1,16 +1,16 @@
 # Design Agent Skills Library
 
-This directory contains HTML/CSS design effects and layouts structured as skills for the design agent to learn and use.
+This directory contains web development skills for the design agent, organized by broad domain. Each skill houses specific `tools/` that the agent can execute or use as reference.
 
-## Categories
+## Domains
 
-- **`effects/`**: Visual flair, gradients, glows, shadows, and animations.
-- **`layouts/`**: Grid systems, flexbox structures, masonry patterns, and responsive arrangements.
-- **`components/`**: Reusable UI pieces like buttons, cards, navbars, and modals.
+- **`frontend-skill/`**: Skills and tools related to HTML/CSS, UI implementations, and frontend build processes.
+- **`backend-skill/`**: Skills and tools related to server-side logic, API endpoints, and database interactions.
+- **`testing-skill/`**: Skills and tools related to visual regression, unit testing, and integration testing.
 
-## How to add a new skill
+## How to add a new tool to a skill
 
-1. Pick the appropriate category folder (e.g. `effects/`).
-2. Create a new directory for your skill (e.g. `glowing_button/`).
-3. Create a `skill.md` file that contains the instructions, purpose, and explanation of how the effect works.
-4. Create an `example.html` file that contains a minimal, working implementation of the effect.
+1. Pick the appropriate skill folder (e.g. `frontend-skill/`).
+2. Inside its `tools/` directory, create a new folder for your tool (e.g. `glassmorphism_card/`).
+3. Create a `<tool_name>-tool.md` file (e.g. `glassmorphism_card-tool.md`) that contains the instructions and purpose of the tool.
+4. Add any associated code files, such as an `example.html` or executable scripts.
