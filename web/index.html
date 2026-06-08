@@ -1,51 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Strange Texo</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/styles.css">
 </head>
-
 <body>
-
-  <!-- Background Ambient Glows -->
-  <div class="ambient-container">
-    <div class="ambient-blob blob-1"></div>
-    <div class="ambient-blob blob-2"></div>
-    <div class="ambient-blob blob-3"></div>
-    <div class="ambient-blob blob-4"></div>
-    <div class="ambient-blob blob-5"></div>
-  </div>
-  <!-- Minimal Layout Container -->
-  <main class="layout-container">
-
-    <!-- Top Left: Hero Identity -->
-    <header class="hero-identity">
-      <!-- Isologo containing the typography and isotipo icon -->
-      <img src="assets/svgs/dark theme/isologo-dark theme.svg" alt="Strange Texo Isologo" class="isologo-main">
-      <div class="subtitle">connections between physical
-        and virtual</div>
-    </header>
-
-    <!-- Bottom Left: Navigation -->
-    <nav class="nav-container">
-      <a href="projects.html" class="nav-link">projects</a>
-      <a href="blog.html" class="nav-link">blog</a>
-      <a href="contact.html" class="nav-link">contact</a>
-    </nav>
-
-  </main>
-
-  <video controls muted id="video" loop crossOrigin="anonymous" playsinline style="display:none">
-    <source src="textures/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-  </video>
-  <div id="container"></div>
-  <canvas class="webgl"></canvas>
-
-  <script src="script.js" type="module"></script>
-  <script src="scene.js" type="module"></script>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
 </body>
-
 </html>

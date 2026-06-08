@@ -17,6 +17,13 @@ body {
   line-height: 1.5;
 }
 
+#root {
+  width: 100vw;
+  height: 100vh;
+  touch-action: none;
+}
+
+
 /* Atmospheric Subtle Glow */
 .ambient-glow {
   position: absolute;
@@ -103,14 +110,16 @@ body {
   flex-direction: column;
   justify-content: space-between;
   z-index: 2;
-  pointer-events: none; /* Let mouse interact with 3D background */
+  pointer-events: none;
+  /* Let mouse interact with 3D background */
 }
 
 /* Top Left Hero Identity */
 .hero-identity {
   display: flex;
   flex-direction: column;
-  pointer-events: auto; /* Re-enable pointer events for this block */
+  pointer-events: auto;
+  /* Re-enable pointer events for this block */
 }
 
 .isologo-main {
@@ -136,7 +145,8 @@ body {
   flex-direction: column;
   gap: 12px;
   margin-left: 2px;
-  pointer-events: auto; /* Re-enable pointer events for navigation */
+  pointer-events: auto;
+  /* Re-enable pointer events for navigation */
 }
 
 .nav-link {
@@ -161,7 +171,8 @@ body {
   width: 100vw;
   height: 100vh;
   z-index: 0;
-  pointer-events: auto; /* Enable OrbitControls */
+  pointer-events: auto;
+  /* Enable OrbitControls */
 }
 
 /* Three.js Stats/GUI Container */

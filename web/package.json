@@ -8,9 +8,16 @@
     "build": "vite build"
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
     "vite": "^4.3.9"
   },
   "dependencies": {
-    "three": "^0.153.0"
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.6.1",
+    "@react-three/postprocessing": "^3.0.4",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-router-dom": "^7.17.0",
+    "three": "^0.184.0"
   }
 }
